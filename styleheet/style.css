@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    grid-gap: 10px;
+    position: relative;
+    top: 20px;
+    left: 84vmax;
+    width: 100%;
+}
+nav a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #282828;
+}
+nav #Gmail a:hover{
+    text-decoration: underline;
+}
+nav #Images a:hover{
+    text-decoration: underline;
+}
+nav #Gmail-Services img{
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+}
+nav #Gmail-Sign-In img{
+    width: 35px;
+    height: 35px;
+    margin-top: -5px;
+    margin-left: -2px;
+}
+section #google-image{
+    display: grid;
+    justify-self: center;
+    width: 100%;
+}
+section img{
+    margin-left: 495px;
+    width: 368px;
+    height: auto;
+    margin-top: 30px;
+    display: relative;
+}
+section #search{
+    display: grid;
+    width: 100%;
+    justify-self: center;
+}
+#search input[type="search"]{
+    width: 470px;
+    height: 47px;
+    margin-left: 450px;
+    margin-top: -80px;
+    border-top: 1px solid #DFE1E5;
+    border-bottom: 1px solid #DFE1E5;
+    border-left: hidden;
+    border-right: hidden;
+    position: absolute;
+    top: 339px;
+}
+#search input[type="search"]:hover{
+    box-shadow: 0 0 1px 1px black;
+}
+#search::before{
+    border: 1px solid #DFE1E5;
+    content: "";
+    background-color: white;
+    width: 90px;
+    height: 45px;
+    border-radius: 25px;
+    position: absolute;
+    left: 410px;
+    top: 259px;
+    z-index: -1;
+}
+#search::after{
+    border: 1px solid #DFE1E5;
+    content: "";
+    background-color: white;
+    width: 90px;
+    height: 45px;
+    border-radius: 25px;
+    position: absolute;
+    left: 870px;
+    top: 259px;
+    z-index: -1;
+}
+#search img{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: -70px;
+    top: 245px;
+}
