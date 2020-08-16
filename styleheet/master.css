@@ -1,0 +1,108 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/*Google Top Navigation Section*/
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 1.25%;
+}
+.navigation div{
+    width: 6%;
+    height: 30px;
+}
+.navigation a{
+    text-decoration: none;
+    color: #373737;
+}
+.underline-class:hover{
+    text-decoration: underline;
+}
+.google-apps-class{
+    background-image: url("/home/jacob/Desktop/Git_Hub/google-homepage/images/google apps icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    opacity: 0.6;
+}
+.google-apps-class:hover{
+    opacity: 1;
+}
+.google-sign-in-button-class{
+    height: 30px;
+    width: 90%;
+    background-color: #6B86ED;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 3px;
+}
+@media screen and (max-width: 600px){
+    .navigation{
+        text-align: center;
+        line-height: 25px;
+    }
+    .navigation div{
+        width: 100%;
+        height: 30px;
+    }
+}
+@media screen and (min-width: 601px) and (max-width:900px){
+    .navigation{
+        text-align: center;
+        line-height: 25px;
+    }
+    .navigation div{
+        width: 10%;
+        height: 30px;
+    }  
+}
+/*Google Content Section. Namely Google logo, search bar and list of languages in which google is offered*/
+.google-logo-class{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5%;
+}
+section div img{
+    width: 27%;
+}
+.google-search-bar-class{
+    display: flex;
+    justify-content: center;
+    margin-top: -3.5%;
+}
+input[type="text"]{
+    width: 45%;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid #E0E1E4;
+}
+.google-buttons-class{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    align-content: space-between;
+    
+}
+
+.google-list-of-languages-class{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.google-search-button-class{
+    height: 35px;
+    width: 10%;
+    background-color: #F2F2F2;
+    color: #616367;
+    font-size: 13px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 3px;
+    margin-left: 1.5%;
+}
