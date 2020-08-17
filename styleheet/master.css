@@ -1,9 +1,15 @@
+html, body{
+    height: 100%;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
 }
 
-/*Google Top Navigation Section*/
+/*Begining of Google Top Navigation Section*/
 .navigation{
     display: flex;
     justify-content: flex-end;
@@ -42,35 +48,24 @@ body{
     border: 0;
     border-radius: 3px;
 }
-@media screen and (max-width: 600px){
-    .navigation{
-        text-align: center;
-        line-height: 25px;
-    }
-    .navigation div{
-        width: 100%;
-        height: 30px;
-    }
+/*End of Google Top Navigation Section*/
+
+/**********************************************************/
+
+/*Begiining of Google Content Section. Namely Google logo, search bar and list of languages in which google is offered*/
+        /*Google Logo*/
+section{
+    margin-bottom: ;
 }
-@media screen and (min-width: 601px) and (max-width:900px){
-    .navigation{
-        text-align: center;
-        line-height: 25px;
-    }
-    .navigation div{
-        width: 10%;
-        height: 30px;
-    }  
-}
-/*Google Content Section. Namely Google logo, search bar and list of languages in which google is offered*/
 .google-logo-class{
     display: flex;
     justify-content: center;
     margin-top: 2.5%;
 }
-section div img{
+.google-logo{
     width: 27%;
 }
+        /*Google Search Bar*/
 .google-search-bar-class{
     display: flex;
     justify-content: center;
@@ -81,19 +76,21 @@ input[type="text"]{
     height: 40px;
     border-radius: 25px;
     border: 1px solid #E0E1E4;
+    padding-left: 35px;
+    outline: none;
+    background: url("/home/jacob/Desktop/Git_Hub/google-homepage/images/search.png") no-repeat;
+    background-size: 15px 15px;
+    background-position-y: 50%;
+    background-position-x: 1%;
 }
+input[type="text"]:hover{
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+        /*Google Search Buttons*/
 .google-buttons-class{
     display: flex;
     justify-content: center;
     margin-top: 2%;
-    align-content: space-between;
-    
-}
-
-.google-list-of-languages-class{
-    display: flex;
-    justify-content: center;
-    margin-top: 1%;
 }
 .google-search-button-class{
     height: 35px;
@@ -101,8 +98,154 @@ input[type="text"]{
     background-color: #F2F2F2;
     color: #616367;
     font-size: 13px;
-    font-weight: bold;
     border: 0;
     border-radius: 3px;
-    margin-left: 1.5%;
+}
+.left-search-button-class{
+    margin-right: 1%;
+}
+.left-search-button-class:hover{
+    background-color: #F7F7F7;
+    border: 1px solid #CBCBCB;
+}
+.right-search-button-class{
+    margin-left: 1%;
+}
+.right-search-button-class:hover{
+    background-color: #F7F7F7;
+    border: 1px solid #CBCBCB;
+}
+        /*Google Search Bar*/
+.google-list-of-languages-class{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.google-list-of-languages-class a{
+    text-decoration: none;
+    color: darkblue;
+}
+.google-list-of-languages-class a:hover{
+    text-decoration: underline;
+}
+/*End of Google Content Section. Namely Google logo, search bar and list of languages in which google is offered*/
+
+/**********************************************************/
+
+/*Beginning of Google Footer Section*/
+footer{
+    margin-top: 13.5%;
+    position: sticky;
+}
+        /*Location Section Styles*/
+.google-location-class{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    color: #6F6F6F;
+    font-size: 120%;
+    padding-left: 2%;
+    border: 1px solid #E4E4E4;
+    height: 40px;
+    align-items: center;
+}
+        /*Bottom Navigation Section Styles*/
+.google-footer-navigation-bar-class{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    color: #6F6F6F;
+    font-size: 14px;
+    padding:0 2% 0 2%;
+    height: 40px;
+    align-items: center;
+}
+.google-services-class a{
+    text-decoration: none;
+    color: #6F6F6F;
+    padding: 0 10px 0 0;
+}
+.google-settings-class a{
+    text-decoration: none;
+    color: #6F6F6F;
+    padding: 0 0 0 10px;
+}
+/*End of Google Footer Section*/
+
+/**********************************************************/
+
+/*Beginning of Section For Google Homepage Media Queries*/
+@media screen and (max-width: 600px){
+    /*Query for the navigation at <=600px*/
+    .navigation{
+        text-align: center;
+        line-height: 25px;
+    }
+    .navigation div{
+        width: 100%;
+        height: 30px;
+    }
+    /*Query for Google Search Bar at <=600px*/
+    input[type="text"]{
+        width: 100%;
+        height: 40px;
+        border-radius: 25px;
+        border: 1px solid #E0E1E4;
+        padding-left: 35px;
+        outline: none;
+        background: url("/home/jacob/Desktop/Git_Hub/google-homepage/images/search.png") no-repeat;
+        background-size: 15px 15px;
+        background-position-y: 50%;
+        background-position-x: 2%;
+    }
+    /*Query for Google Buttons*/
+    .google-search-button-class{
+        height: 35px;
+        width: 30%;
+        background-color: #F2F2F2;
+        color: #616367;
+        font-size: 13px;
+        border: 0;
+        padding:5px;
+        border-radius: 3px;
+    }
+    /*Query for Google Footer*/
+    footer{
+        margin-top: 50%;
+    }
+}
+@media screen and (min-width: 601px) and (max-width:900px){
+    /*Query for the navigation at >=600px and <=900*/
+    .navigation{
+        text-align: center;
+        line-height: 25px;
+    }
+    .navigation div{
+        width: 10%;
+        height: 30px;
+    }  
+    /*Query for Google Search Bar*/
+    input[type="text"]{
+        width: 45%;
+        height: 40px;
+        border-radius: 25px;
+        border: 1px solid #E0E1E4;
+        padding-left: 35px;
+        outline: none;
+        background: url("/home/jacob/Desktop/Git_Hub/google-homepage/images/search.png") no-repeat;
+        background-size: 15px 15px;
+        background-position-y: 50%;
+        background-position-x: 2%;
+    }
+    /*Query for Google Buttons*/
+    .google-search-button-class{
+        height: 35px;
+        width: 20%;
+        background-color: #F2F2F2;
+        color: #616367;
+        font-size: 13px;
+        border: 0;
+        padding:5px;
+        border-radius: 3px;
+    }
 }
